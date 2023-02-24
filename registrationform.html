@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new form</title>
+
+    <style>
+
+        body{
+            background:lightgoldenrodyellow ;
+        }
+
+        marquee{
+            text-transform:capitalize ;
+            background:lightsalmon;
+            color: black;
+            padding: 10px;
+            text-decoration: solid;
+            letter-spacing: .1rem;
+            width: 100%;
+        
+        }
+
+        .blink {
+            animation: blinker 1.5s linear infinite;
+            color: red;
+            
+        
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        p{
+            margin-top: 8px;
+            font-family: sans-serif ;
+            font-size: 20px;
+            font-weight: bolder;
+            color:#ff9f1a;
+            cursor: pointer;
+
+        }
+
+        p:hover{
+            text-shadow: 1px 1px black;
+            text-decoration: underline;
+        }
+    
+        form{
+        margin-left: auto;
+        padding: 10px, 10px;
+        box-shadow: #ff9f1a;
+        font-family: "poppins", sans-serif;
+        font-size: small;
+        font-weight: bold;
+        color: rgb(81, 81, 83);
+        
+        }
+
+        fieldset{
+        margin: auto;
+        margin-top: 80px;
+        height: 530px;
+        width: 400px;
+        text-align: center;
+        background-color: lightyellow;
+        border-radius: 10px;
+        box-shadow: 3px 5px 5px rgb(246, 170, 139);
+        
+        }
+
+        fieldset:hover{
+            box-shadow: 0 0 10px #ff9f1a;
+            transform: scale(1.1);
+        }
+
+        .container{
+            margin: auto;
+            padding-top: 30px;
+            text-transform:capitalize ;
+        
+        }
+
+        .btn{
+            background-color: #ff9f1a;
+            color: antiquewhite;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+            padding: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .btn:hover{
+            background-color:rgb(109, 104, 104);
+        }
+
+        @media screen and (max-width: 800px) {
+
+
+        fieldset:hover{
+                    box-shadow:none;
+                    transform: none;
+                }
+        }   
+        
+        marquee{
+            width: 100%;
+            margin-right: 10px;
+
+        }
+        form{
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <marquee><a class="blink">&#9677 </a>&nbsp;note: Declare that all the information given by is true to best of your knowledge and finally submit
+        your application form..</marquee>
+    <form>
+        <fieldset>
+            <p> Application Form</p><hr>
+
+        <div class="container">
+
+            <label for="firstname" >name  : &nbsp;</label>
+            <input type ="text"   id="firstname" name="firstname" placeholder="enter your name here" required class="box"><br><br>
+
+            <label for="email">email  : &nbsp;</label>
+            <input type ="email"   id="email" name="email" placeholder="enter your Email here" required class="box"><br><br>
+
+            <label for="number">contact :</label>
+            <input type ="number"   id="number" name="number" placeholder="enter your contact here" required class="box"><br><br>
+
+            <label for="address"> address:</label>
+            <input type ="text"   id="address" name="address" placeholder="enter your number here" required class="box"><br><br>
+
+            <label style="text-decoration:none"> select your state :</label>
+            <select  id="" name="state" class="box">
+
+                <optgroup label="north">
+                <option value="city">delhi</option>
+                <option value="city">madhya pradesh</option>
+                </optgroup>
+
+                <optgroup label="south">
+                <option value="city">telangana</option>
+                <option value="city">andhra pradesh</option>
+                </optgroup>
+
+            </select><br><br>
+            
+            <ins style="text-decoration:none"> gender :</ins>
+            <label for="gender">Male</label>
+            <input type ="radio"  id="" name="gender">
+
+            <label for="gender">FeMale</label>
+            <input type ="radio"  id="" name="gender"><br><br>
+
+            <ins style="text-decoration:none"> Course :</ins>
+            <label for="Course">full stack</label>
+            <input type ="checkbox"  id="" name="Course">
+
+            <label for="Course">python</label>
+            <input type ="checkbox"  id="" name="Course"><br><br>
+
+
+            <label for="date">select joining Date :</label>
+            <input type ="date"   id="date" name="date" class="box"><br><br>
+
+            <label class="m1" for="message">message here :</label>
+           <textarea name="message" placeholder="text here"></textarea><br><br>
+
+           <label  for="doc">Upload file here :</label>
+           <input type="file" name="doc" id="doc"></select><br><br>
+
+           <input  class="btn" type="submit" value="submit" class="btn">
+
+           <input  class="btn" type="reset" value="reset" class="btn">
+
+     </div> 
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
+

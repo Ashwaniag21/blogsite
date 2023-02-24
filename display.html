@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+
+    <style>
+        body {
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 100%;
+             overflow-x: hidden;
+        }
+
+        header {
+            /* border: 2px solid black; */
+            background-color: whitesmoke;
+
+        }
+
+        img {
+            /* border: 2px solid red;   */
+            width: 5%;
+            margin: auto;
+            display: block;
+        }
+
+        .box {
+            /* border: 2px solid green; */
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .box:hover {
+            color: green;
+        }
+
+        nav {
+            /* border: 2px solid black; */
+            margin-top: 5px;
+            width: 99.8%;
+            padding-bottom: 5px;
+            background-color: aliceblue;
+
+        }
+
+        .icon {
+            width: 2%;
+            /* border: 1px solid yellowgreen; */
+            display: inline;
+            margin-left: 30px;
+            padding-top: 2px;
+        }
+
+        .iconli {
+            /* border:  1px solid blue; */
+            float: right;
+            margin-bottom: 80px;
+            display: inline;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .iconli a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .iconli a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        section {
+            /* border: 2px solid red; */
+            width: 900px;
+            margin-top: 5px;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            /* border: 1px solid red; */
+            padding: 15px;
+        }
+
+        .containerimg{
+            display: inline;
+            height: 25px;
+            width: 4%;
+            padding-right: 15px;
+        }
+
+        .container h1 {
+            /* border: 1px solid pink;  */
+            display: inline;
+            color: red;
+            margin-bottom: 5px;
+            padding-left: 0px;
+            animation: blinker 1.5s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .containerli {
+            /* border: 1px solid green;    */
+            padding-top: 20px;
+            text-align: justify;
+
+        }
+
+        aside {
+            /* border: 3px solid red; */
+            width: 545px;
+            float: right;
+            margin-top: -445px;
+            background-color: rgb(236, 243, 195);
+
+        }
+
+        .asideimg {
+            /* border: 2px solid green; */
+            width: 95%;
+            height: 405px;
+            padding-top: 10px;
+
+        }
+
+        aside h1 {
+            padding-left: 15px;
+            font-size: 25px;
+        }
+
+        aside p {
+            margin-top: -17px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        article {
+            /* border: 3px solid red; */
+            width: 900px;
+            margin-top: 5px;
+            background-color: lightgoldenrodyellow;
+            float: left;
+        }
+
+        .labelimg {
+            /* border: 2px solid red; */
+            display: inline;
+            padding-left: 60px;
+            padding-bottom: 7px;
+
+        }
+
+        footer {
+            /* border: 3px solid black; */
+            padding: 12px;
+            margin-top: 3px;
+            background-color: aliceblue;
+            margin-top: 100px;
+        }
+
+        footer a {
+            /* border: 2px solid red;  */
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: red;
+        }
+
+        footer a:hover {
+            color: green;
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            nav {
+                width: 99%;
+            }
+
+            section {
+                width: 99%;
+                display: block;
+            }
+
+            aside {
+                width: 100%;
+                display: block;
+                margin-top: 5px;
+            }
+
+            article {
+                width: 99%;
+                display: block;
+            }
+
+            footer {
+                margin-top: 610px;
+            }
+
+            img {
+                width: 10%;
+            }
+
+            .iconli {
+                padding: 5px;
+                font-size: 45%;
+                padding-top: 8px;
+            }
+
+            .box {
+                font-size: 90%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .label {
+                margin-right: 5px;
+                width: 100%;
+            }
+            .asideimg {
+            height: 350px;
+
+             }
+             .containerimg{
+             display: none;
+
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png">
+        <div class="box">RAJGURU INFOTECH</div>
+    </header>
+    <nav>
+        <img class="icon"
+            src="https://www.citypng.com/public/uploads/small/116395943260tji5ordfujy44njydzhlidv8reqpmtun7ggx1oszpz1dcistzxnmag7do6vxkjxphlsgueuurkg9pkpbwgorvv9lratpxm38rp5.png">
+        <img class="icon" src="https://img.icons8.com/material-outlined/1x/dashboard-layout.png">
+
+        <li class="iconli"><a href="#">home</a></li>
+        <li class="iconli"><a href="#">about</a></li>
+        <li class="iconli"><a href="#">contact</a></li>
+        <li class="iconli"><a href="registrationform.html" target="_blank">register</a></li>
+
+    </nav>
+
+    <section>
+        <div class="container">
+
+            <h1><img class= "containerimg" src="https://img.icons8.com/color/1x/hand-right-skin-type-1.png"></a>Why Choose Us?</h1>
+                <li class="containerli">We believe in turn ideas into reality. We are able to turn your business idea in to web application.</li>
+                <li class="containerli">Website Design & Development is our passion!</li>
+                <li class="containerli">We give good Quality in a short period of time.</li>
+                <li class="containerli">User friendly design features.</li>
+                <li class="containerli">We are honestly trying to give you best using our experience and logic, keeping your requirements and idea in mind.</li>
+                <li class="containerli">We have an experience of 5+ years in the Web developments.</li>
+                <li class="containerli">Customer satisfaction is most important to us.</li>
+                <li class="containerli">We have designers who are creative and innovative enough to satisfy any kind of clients</li>
+                <li class="containerli">We understand great level of testing.</li>
+                <li class="containerli">We have professional developers who are expert in latest technologies like HTML5, CSS3, jQuery, Javascript, PHP5 etc.</li>
+
+        </div>
+    </section>
+
+    <aside>
+
+        <img class="asideimg"
+            src="https://shourai.io/wp-content/uploads/2020/07/kindpng_1272110.png">
+        <h1>Full Stack Web Development</h1>
+        <p>“we are Positive, Enthusiastic And Competent Web Developer Who, Over The Years, Has Built Up A Diverse Range
+            Of Skills, Qualities And Attributes That Guarantee we Will Perform Highly In This role.”</p>
+    </aside>
+
+    <article>
+        <marquee class="label">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/35_html5.d4d8050235.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/14_css3.d930bfb832.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/39_javascript.0ca26ec4ab.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/70_react.76a8d36b4b.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/67_python.34cfd522d6.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/61_nodejs.124d3fe0e1.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/0_angular.fe63c22e96.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/5_bootstrap.bbf5d3d59c.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/38_java.bc46b9254c.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/71_redux.da27ac619d.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/43_jquery.18209fdd44.svg">
+            <img class="labelimg" src="https://symbols.getvecta.com/stencil_25/50_magento.44c4b72451.svg">
+        </marquee>
+
+    </article>
+
+    <footer>
+        <a href="https://ashwaniag21.github.io/MY_Portfolio.github.io/" target="_blank">created by mr.Ashwani Agnihotri || CopyRight@20223</a>
+    </footer>
+</body>
+
+</html>
